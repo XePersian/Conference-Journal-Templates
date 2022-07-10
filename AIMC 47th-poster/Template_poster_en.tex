@@ -1,0 +1,149 @@
+\documentclass[a0,12pt,portrait]{a0poster}
+
+\usepackage{multicol} % This is so we can have multiple columns of text side-by-side
+\columnsep=100pt % This is the amount of white space between the columns in the poster
+%\columnseprule=2.75pt % This is the thickness of the black line between the columns in the poster
+
+\usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
+
+\usepackage{times} % Use the times font
+%\usepackage{palatino} % Uncomment to use the Palatino font
+%\usepackage{subfig}
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{figures/}} % Location of the graphics files
+\usepackage{booktabs} % Top and bottom rules for table
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage{color,xcolor}
+\usepackage[all]{xy}
+%\usepackage[margin=1in]{geometry}
+%\usepackage[top=25mm, bottom=12mm, left=25mm, right=25mm]{geometry}
+\usepackage[top=20mm, bottom=5mm, left=35mm, right=20mm]{geometry}
+\usepackage{wrapfig} % Allows wrapping text around tables and figures
+\usepackage[pages=some]{background}
+\backgroundsetup{
+scale=1.02,
+color=green,
+opacity=0.15,
+angle=0,
+contents={%
+  \centering \includegraphics[width=\paperwidth,height=\paperheight]{poster.jpg}
+  }%
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{xca}[theorem]{Exercise}
+%\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+%-----------------------------------------------------------
+\newcommand{\Q}{\mathbb{Q}}                % for rational number
+\newcommand{\R}{\mathbb{R}}                % for Real numbers
+\newcommand{\Z}{\mathbb{Z}}                % for Integer number
+\newcommand{\nls}{\textbf{n}ls}
+
+\begin{document}
+ \BgThispage
+ \leftline{{\Large\textbf{ $\bf 47^{th}$ Annual
+Iranian Mathematics Conference}}} \vspace{.5cm}
+\leftline{{\Large \textbf{28 -- 31 August 2016}}}
+\begin{center}
+\Huge \color{NavyBlue} \textbf{Title} \color{Black}\\[0.75cm] % Title
+\huge \textbf{Author A\footnote{\Large Corresponding Author}, Author B}\\[0.05cm] % Author(s)
+The Name of University, Email Address \\[0.5cm]
+The Name of University, Email Address\\[0.5cm] 
+\end{center}
+\vspace{1cm} % A bit of extra whitespace between the header and poster content
+
+\begin{center}
+\Huge Abstract
+\end{center}
+
+\huge
+The abstract should  contain 5 up to 10 lines. The numbered displayed formulas, figures, tables and references
+should not be included in the abstract. The \textbf{abstract should be informative} so that it briefly describes
+the research works of the author(s).
+\begin{multicols}{2}
+\noindent \textbf{Keywords}: At most 5 words or phrases.
+
+\noindent\textbf{Mathematics Subject Classification (2010):} For example, 46J10, 46J15, 41A10.
+
+\section{\LARGE Introduction} 
+Here you should bring the preliminaries, terminologies,
+ historical background, definitions and some of the known results.
+
+\begin{definition} 
+ ...
+\end{definition}
+\begin{definition}
+...
+\end{definition}
+\begin{proposition}$\mathrm{\cite[Theorem~A]{bib3}}$
+...
+\end{proposition}
+\begin{theorem}$\mathrm{[Reference~ number]}$
+...
+\end{theorem}
+\begin{example}
+...
+\end{example}
+\begin{remark}
+...
+\end{remark}
+\begin{theorem}$\mathrm{[Reference~ number]}$
+...
+\end{theorem}
+\begin{theorem}$\mathrm{[Reference~ number]}$
+...
+\end{theorem}
+
+\section{\LARGE Main Results}
+Here you should present some preliminaries and then bring your main results, but it is not necessary to present the proofs.
+ However, you may briefly present some parts of the proofs.
+You may also bring some remarks and examples.
+
+\noindent Instead of the Main Results in the title of section 2, you may write any title you wish, which is related to
+your research works. You may also add more sections if you prefer.
+\begin{definition}
+...
+\end{definition}
+\begin{proposition}
+...
+\end{proposition}
+\begin{proof}
+If you prefer to present a short proof.
+\end{proof}
+\begin{theorem}
+...
+\end{theorem}
+\begin{proof}
+If you prefer to present a short proof.
+\end{proof}
+\begin{example}
+...
+\end{example}
+\noindent{\LARGE\bf Acknowledgement} (If you wish)
+
+\noindent  In the following, references should  appear alphabetically, by the
+family names of the first authors.
+
+\begin{thebibliography}{99}
+\baselineskip=.5cm
+\bibitem{bib1}
+ Author's name(s), Title of the paper, \textit{Journal's name}(in Italic)  {\bf Vol. ...} (the year of publication), pages.
+\bibitem{bib2}
+Author's name(s), \textit{Title of the Book}(in Italic), The
+Publisher, the year of publication.
+\bibitem{bib3} H. G. Dales, \textit{Banach Algebras and Automatic Continuity}, Clarendon Press, Oxford, 2000.
+\bibitem{bib4} T. J. Ransford, A short proof of Johnson's uniqueness-of-norm theorem, \textit{ Bull. London Math. Soc.} {\bf 21}(1989), 487-488.
+\end{thebibliography}
+
+\end{multicols}
+\end{document}

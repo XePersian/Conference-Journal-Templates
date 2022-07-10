@@ -1,0 +1,150 @@
+\documentclass[a0,12pt,portrait]{a0poster}
+\makeatother
+\usepackage{multicol} % This is so we can have multiple columns of text side-by-side
+\columnsep=100pt % This is the amount of white space between the columns in the poster
+%\columnseprule=2.75pt % This is the thickness of the black line between the columns in the poster
+
+\usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
+
+\usepackage{times} % Use the times font
+%\usepackage{palatino} % Uncomment to use the Palatino font
+%\usepackage{subfig}
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{figures/}} % Location of the graphics files
+\usepackage{booktabs} % Top and bottom rules for table
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage{color,xcolor}
+\usepackage[all]{xy}
+%\usepackage[margin=1in]{geometry}
+%\usepackage[top=20mm, bottom=12mm, left=20mm, right=20mm]{geometry}
+\usepackage[top=20mm, bottom=5mm, left=35mm, right=20mm]{geometry}
+\usepackage{wrapfig} % Allows wrapping text around tables and figures
+\usepackage[pages=some]{background}
+\backgroundsetup{
+scale=1.02,
+color=green,
+opacity=0.15,
+angle=0,
+contents={%
+  \centering \includegraphics[width=\paperwidth,height=\paperheight]{poster.jpg}
+  }%
+}
+
+\usepackage{xepersian}
+%\settextfont[Scale=.8]{Yas}
+%\setdigitfont[Scale=.7]{Yas}
+\settextfont[BoldFont={YasBd.ttf},ItalicFont={YasIt.ttf},BoldItalicFont={YasBdIt.ttf}]{YasBd.ttf}
+\setdigitfont{Yas.ttf}
+
+\newtheorem{theorem}{قضیه}[section]
+\newtheorem{lemma}[theorem]{لم}
+\newtheorem{proposition}[theorem]{گزاره}
+\newtheorem{corollary}[theorem]{نتیجه}
+\newtheorem{definition}[theorem]{تعریف}
+\newtheorem{remark}[theorem]{توجه}
+\newtheorem{note}[theorem]{نکته}
+\newtheorem{example}[theorem]{مثال}
+\renewcommand\proofname{برهان} 
+\numberwithin{equation}{section}
+%***************************************
+%-----------------------------------------------------------
+\newcommand{\Q}{\mathbb{Q}}                % for rational number
+\newcommand{\R}{\mathbb{R}}                % for Real numbers
+\newcommand{\Z}{\mathbb{Z}}                % for Integer number
+\newcommand{\nls}{\textbf{n}ls}
+
+\begin{document}
+ \BgThispage
+ \rightline{{\large\textbf{ چهل و هفتمین کنفرانس ریاضی، دانشگاه خوارزمی}}} \vspace{.5cm}
+
+ \rightline{ \large\textbf{7 تا 10  شهریور 1395}}
+\begin{center}
+\Huge \textbf{عنوان}\\[0.5cm]  %Title
+\huge \textbf{مؤلف اول \footnote{\LARGE مسئول مکاتبات}},
+\textbf{مؤلف دوم }\\[0.5cm]
+  {\LARGE نام دانشگاه، آدرس ایمیل}
+ \\{\LARGE   نام دانشگاه، آدرس ایمیل}\\[0.6cm] 
+\end{center}
+\vspace{1cm} % A bit of extra whitespace between the header and poster content
+\begin{center}
+{\huge چکیده }
+\end{center}
+\huge
+     چکیده باید بین 5 تا 10 سطر باشد. فرمولِ شماره‌دار، شکل، جدول و مرجع
+      نباید در چکیده آورده شود. چکیده باید {\bf آگاهی دهنده} باشد به‌طوری که کارهای پژوهشی مؤلفین را به‌صورت خلاصه توصیف کند. 
+\begin{multicols}{2} % This is how many columns your poster will be broken into, a portrait poster is generally split into 2 columns
+
+\noindent \textbf{واژه‌های کلیدی:} حداکثر 5 واژه یا عبارت
+
+\noindent\textbf{رده‌بندی موضوعی ریاضی \lr{$(2010)$}:}
+ به عنوان مثال، \lr{$\mathrm{46J10}$},  \lr{$\mathrm{46J15}$}, \lr{$\mathrm{41A10}$}.
+\section{\LARGE مقدمه} 
+در اینجا شما باید مقدمات اولیه، اصطلاحات، پیشینه تاریخی، تعریف‌ها و برخی نتایج شناخته شده را بیاورید. 
+\begin{definition}
+...
+\end{definition}
+\begin{definition}
+...
+\end{definition}
+\begin{proposition}$\mathrm{[\mbox{\rl{شمارۀ مرجع}}]}$
+...
+\end{proposition}
+\begin{theorem}$\mathrm{[\mbox{\rl{شمارۀ مرجع}}]}$
+...
+\end{theorem}
+\begin{example}
+
+\end{example}
+\begin{remark}
+...
+\end{remark}
+\begin{theorem}$\mathrm{[\mbox{\rl{شمارۀ مرجع}}]}$
+...
+\end{theorem}
+\begin{theorem}$\mathrm{[\mbox{\rl{شمارۀ مرجع}}]}$
+...
+\end{theorem}
+\section{\LARGE نتایج اصلی}
+   در اینجا باید برخی از مقدمات را ذکر کنید و نتایج اصلی خود را بیاورید، ولی لازم نیست که برهان آنها را هم ذکر کنید. البته می‌توانید برخی از نکات مهم برهان را به‌طور خلاصه ارائه دهید.  ضمناً می‌توانید مثال‌ها و نکته‌هایی را هم بیاورید.  
+
+  به‌جای {\bf{نتایج اصلی}} در عنوان بخش دوم، می‌توانید هر عنوان دیگری را که متناسب با کارهای پژوهشی شما باشد، بنویسید.  ضمناً چنانچه مایل باشید می‌توانید بخش‌های بیشتری را هم اضافه کنید.
+\begin{definition}
+...
+\end{definition}
+\begin{proposition}
+
+...
+\end{proposition}
+\begin{proof}
+اگر ترجیح می‌دهید که برهان خلاصه‌ای را ارائه دهید.  
+\end{proof}
+\begin{theorem}
+...
+\end{theorem}
+\begin{proof}
+اگر ترجیح می‌دهید که برهان خلاصه‌ای را ارائه دهید. 
+\end{proof}
+\begin{example}
+...
+\end{example}
+\noindent{\large{\bf تقدیر و تشکر}}  (اگر مایل هستید)
+
+\noindent مرجع‌ها باید به‌ترتیب الفبایی نام خانوادگی مؤلفین اول باشد. فقط مرجع‌های اصلی آورده شود و تعداد آن‌ها از 7 بیشتر نباشد.
+
+
+\begin{thebibliography}{99}
+\baselineskip=.55cm
+\persian
+\bibitem{bib1}
+ نام و نام خانوادگی مؤلفین، عنوان مقاله، نام مجله (با حروف ایرانیک)، شماره جلد ... (سال انتشار)، صص (از صفحه ... تا ...).
+\bibitem{bib2}
+نام و نام خانوادگی مؤلفین، عنوان کتاب (با حروف ایرانیک)، ناشر، سال انتشار.
+\latin
+\bibitem{bib3} H. G. Dales, \textit{Banach Algebras and Automatic Continuity}, Clarendon Press, Oxford, 2000.
+\bibitem{bib4} T. J. Ransford, A short proof of Johnson's uniqueness-of-norm theorem, \textit{ Bull. London Math. Soc.} {\bf 21}(1989), 487-488.
+\end{thebibliography}
+\end{multicols}
+
+\end{document}

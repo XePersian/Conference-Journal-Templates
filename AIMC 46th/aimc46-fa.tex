@@ -1,0 +1,182 @@
+% !TEX TS-program = XeLaTeX
+
+\documentclass[aimcpersian]{aimc46}
+%% در صورت نیاز به فراخوانی بسته‌های اضافی، آن‌ها را در فایل aimc46.cls و قبل از 
+%% بسته زی‌پرشین فراخوانی کنید.
+
+\title{
+یک نمونه عنوان مقاله آزمایشی
+}
+\author{
+وحید دامن‌افشان%
+\RTLthanks{سخنران}\index{دامن‌افشان، وحید}
+\university{دانشگاه تبریز}
+\and
+علی احمدی فضلی
+\index{احمدی فضلی، علی}\university{دانشگاه یزد}
+%\and
+%احمد احمدی
+%\index{احمدی، احمد}\university{دانشگاه یزد}
+}
+
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+در این قسمت چکیده مقاله در حداقل ۳ و حداکثر ۷
+ سطر نوشته می‌شود. در چکیده از نوشتن فرمول نمایشی شماره‌دار، اختصارات غیرمعمول، ارجاع‌دهی به مراجع و امثال آن
+ خودداری کنید. به جای آن‌ها، نتیجه اصلی مقاله را به صورت توصیفی بیان کنید.
+\end{abstract}
+\keywords{توپولوژی اسکات، فضای فشرده، نگاشت بی‌نقص (حداقل ۳ و حداکثر 5 واژه)}
+\subject{13D45, 39B42}
+
+
+
+\section{مقدمه }
+در این بخش، برای نمونه، مقدمه مقاله نوشته می‌شود. مقاله ارسالی باید حداقل ۳ و حداکثر ۴ صفحه داشته باشد و فقط 
+در همین قالب نوشته شود.  بدیهی است به مقالاتی که توصیه‌های موجود در قالب را رعایت نکرده باشند، ترتیب اثر داده نخواهد شد. 
+
+این قالب با استفاده از زی‌پرشین تهیه شده است که در هر دو توزیع معروف تک‌لایو و میک‌تک وجود دارد؛ اما پیشنهاد ما استفاده از نسخه‌های
+به‌روز توزیع تک‌لایو است. در زی‌پرشین می‌توان هم پانویس فارسی\RTLfootnote{یک پانویس فارسی} داشت و هم پانویس 
+انگلیسی\LTRfootnote{An English footnote}. علاوه بر این می‌توان عبارت‌های چندکلمه‌ای انگلیسی را به آسانی و با جهت درست نوشت: 
+\lr{Mathematics Conference}.
+برای نوشتن بیشتر از چند کلمه به انگلیسی، می‌توان از محیط \texttt{latin} استفاده کرد:
+\begin{latin}
+ An article is divided into logical units, including an abstract, various sections and subsections, theorems,
+ and a bibliography.  The logical units are typed independently of one another.
+\end{latin}
+سوال‌های فنی خود را درباره این قالب  می‌توانید  با برچسب \lr{aimc46} در سایت پرسش و پاسخ
+پارسی‌لاتک%
+\LTRfootnote{\texttt{http://qa.parsilatex.com}}
+ مطرح کنید. پرسش‌های دیگران را هم می‌توانید در صفحه برچسب 
+\lr{aimc46}%
+\LTRfootnote{\texttt{http://qa.parsilatex.com/tag/aimc46}}
+دنبال کنید.
+\begin{definition}
+این یک تعریف است که در آن $\sin^2 x+ \cos^2 x=1$ است.
+\end{definition}
+\begin{theorem}\label{vtheo1}
+این یک قضیه است که در آن به مرجع \cite{folland} ارجاع داده می‌شود.
+
+\end{theorem}
+\begin{proof}
+این یک اثبات است.
+\end{proof}
+با زدن برچسب‌های مناسب و یکتا به تعاریف، قضایا و... می‌توان در متن به آن‌ها ارجاع داد. به عنوان مثال در اینجا به قضیه \ref{vtheo1}
+ارجاع داده می‌شود.
+\begin{lemma}
+این یک لم است.
+\end{lemma}
+\begin{proposition}
+این یک گزاره است.
+\end{proposition}
+\begin{corollary}
+این یک نتیجه است.
+\end{corollary}
+\begin{example}\label{vexam1}
+این یک مثال است که حل آن در زیر آمده است.
+\end{example}
+\begin{solution}
+این حل مثال \ref{vexam1} است که در آن از \cite{alvarezart} کمک گرفته شده است.
+\end{solution}
+\begin{remark}
+این یک ملاحظه است.
+\end{remark}
+
+
+\section{نتایج اصلی}
+در اینجا یک شکل آورده می‌شود. لازم نیست شکل‌ها در همان‌ جایی که در سورس قرار داده می‌شوند، در خروجی هم در همان جا
+ظاهر شوند. به جای این کار می‌توان به آن‌ها ارجاع داد. به عنوان مثال شکل  \ref{vfig1} را ببینید.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=5cm]{example-image-a}
+\caption{یک شکل آزمایشی}\label{vfig1}
+\end{figure}
+
+
+در اینجا یک جدول آورده می‌شود. لازم نیست جدول‌ها در همان‌ جایی که در سورس قرار داده می‌شوند، در خروجی هم در همان جا
+ظاهر شوند. به جای این کار می‌توان به آن‌ها ارجاع داد. به عنوان مثال جدول \ref{vtab1} را ببینید.
+\begin{table}[!h]
+\centering
+\caption{یک جدول آزمایشی}\label{vtab1}
+\begin{tabular}{ccc}
+\hline
+سرستون اول & سرستون دوم & سرستون سوم \\ \hline
+نامشخص & $x^2+1$ & $6$ \\ 
+$-20$ & $y$ & $11$ \\
+$-12$ & $x+y$ & $7$\\
+ \hline
+\end{tabular} 
+\end{table}
+
+همچنین می‌توان با استفاده از بسته \texttt{subfig} دو یا چند شکل را در کنار یکدیگر قرار داد.
+\begin{figure}[!ht]
+\centering
+\subfloat[عنوان شکل اول]{\includegraphics[width=4cm]{example-image-b}}
+\quad
+\subfloat[عنوان شکل دوم]{\includegraphics[width=4cm]{example-image-c}}
+\caption{عنوان کلی شکل}
+\label{vfig2}
+\end{figure}
+
+حال نوبت به یک فرمول بدون شماره می‌رسد.
+\[
+\sin^4 x+\cos^4 x=1-2\sin^2 x\cos^2 x.
+\]
+
+در ادامه یک فرمول با شماره و با قابلیت ارجاع آورده می‌شود
+\begin{align}\label{vequ1}
+y=(\sqrt{x}+1)(\sqrt{x}-1)(x+1)
+\end{align}
+که می‌توان به فرمول \eqref{vequ1} ارجاع داد.
+
+حروف‌چینی فرمول‌های چندخطی نیز ساده است.
+\begin{align*}
+y&=(\sqrt{x}+1)(\sqrt{x}-1)(x+1)\\
+&=(x-1)(x+1)\\
+&=x^2 -1.
+\end{align*}
+
+همچنین می‌توان فرمول چندخطی، تنها با یک شماره داشت
+\begin{align}
+y&=(\sqrt{x}+1)(\sqrt{x}-1)(x+1)\notag\\
+&=(x-1)(x+1)\label{vequ2}\\
+&=x^2 -1\notag
+\end{align}
+که بعدها بتوان به \eqref{vequ2} ارجاع داد.
+
+
+
+
+\section*{سپاس‌گزاری}
+در صورت تمایل، بخش سپاس‌گزاری باید قبل از مراجع نوشته شود.
+
+
+
+\begin{thebibliography}{9}
+\bibitem{ode}
+خیری، حسین، دامن‌افشان، وحید، مقدم، مهسا و وفائی، وجیهه، \textit{نظریه معادلات دیفرانسیل معمولی و سیستم‌های دینامیکی}،
+انتشارات دانشگاه تبریز، تبریز، ۱۳۹۰.
+\begin{LTRbibitems}
+\resetlatinfont
+\bibitem{alvarezart}
+M. Alvarez-Manilla, A. Jung, K. Keimel, \textit{The probabilistic powerdomain for stably compact
+spaces}, Theoretical Computer Science, 328 (2004), pp. 221--244.
+
+\bibitem{alvarezartthe}
+M. Alvarez-Manilla, \textit{Measure theoretic results for continuous valuations on partially ordered spaces}, Ph.D. Thesis, Imperial College, University of London, 2001.
+
+\bibitem{folland}
+G. B. Folland, \textit{Real Analysis: Modern Techniques and Their Applications}, 2nd ed., John Wiley, 1999.
+
+\bibitem{topsze}
+F. Topsze, \textit{Topology and Measure}, Lecture Notes in Mathematics, Vol. 133, Springer, Berlin, 1970.
+\end{LTRbibitems}
+\end{thebibliography}
+
+\email{vdamanafshan@gmail.com}
+\email{author2@aaa.ac.ir}
+%\email{author3@aaa.ac.ir}
+\end{document}
